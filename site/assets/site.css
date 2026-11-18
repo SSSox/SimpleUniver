@@ -352,6 +352,16 @@ details > p, details > .command { margin-bottom: 14px; color: var(--muted); }
   .viewer-caption { order: -1; flex-basis: 100%; }
   .viewer-count { margin-right: auto; }
 }
+/* Side by side, the two file cards share rows: both download buttons sit on one line, and an opened checksum
+   fold grows only the last row, so neither button moves. Setup has no requirements, so its row 3 stays empty. */
+@media (min-width: 821px) {
+  @supports (grid-template-rows: subgrid) {
+    .files { grid-template-rows: repeat(5, auto); }
+    .file { display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 12px; }
+    .file > .file-get { grid-row: 4; margin-top: 0; }
+    .file > .check { grid-row: 5; }
+  }
+}
 /* «Windows 7, 8 және 8.1» does not fit beside its neighbour on a phone: the two systems stack instead of wrapping. */
 @media (max-width: 480px) {
   .seg-system .seg-track { grid-auto-flow: row; }

@@ -197,7 +197,7 @@
         capDesktopHome: ['Главная страница кабинета', 'Кабинеттің басты беті', 'Account home page'],
         capDesktopSections: ['Все разделы сайта с поиском', 'Іздеуі бар барлық бөлімдер', 'Every section, with search'],
         capDesktopUmkd: ['Материалы курса', 'Курс материалдары', 'Course files'],
-        capDesktopPin: ['Вход по PIN-коду', 'PIN-кодпен кіру', 'Unlock with a PIN code'],
+        capDesktopPin: ['Защита PIN-кодом', 'PIN-кодпен қорғау', 'PIN code lock'],
         capAndroidHome: ['Главная на телефоне', 'Телефондағы басты бет', 'Home on the phone'],
         capAndroidSchedule: ['Расписание на день', 'Күндік кесте', 'Schedule for the day'],
         capAndroidSections: ['Все разделы', 'Барлық бөлімдер', 'All sections'],
