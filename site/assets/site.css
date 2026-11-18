@@ -5,7 +5,7 @@
   --accent-soft: #d3e2f5; --selected: #e6effa;
   --ink: #16283b; --muted: #536476; --bg: #f1f4f7; --bg-alt: #e7eef7; --surface: #fff;
   --border: #d9e1ea; --line: #e3e9f0; --track: #e1e9f3; --thumb: #fff;
-  --good: #23704a; --warn-bg: #fff3e0; --warn-ink: #5e3b00; --warn-icon: #a35f00;
+  --warn-bg: #fff3e0; --warn-ink: #5e3b00; --warn-icon: #a35f00;
   --band: #164a86; --band-deep: #123e72; --band-ink: #fff; --band-muted: #cddcf0; --band-line: rgba(255, 255, 255, .28);
   --shadow: 0 1px 2px rgba(22, 40, 59, .06), 0 2px 8px rgba(22, 40, 59, .06);
   --font: 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, Roboto, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -18,7 +18,7 @@
     --accent-soft: #243c5c; --selected: #1f3350;
     --ink: #e6ebf1; --muted: #a3b0be; --bg: #14191f; --bg-alt: #18212c; --surface: #1d232b;
     --border: #333d49; --line: #2b343f; --track: #26303b; --thumb: #36414e;
-    --good: #6fcf9a; --warn-bg: #3a2b12; --warn-ink: #f3d6a2; --warn-icon: #f0b45a;
+    --warn-bg: #3a2b12; --warn-ink: #f3d6a2; --warn-icon: #f0b45a;
     --band: #10304f; --band-deep: #0c253f; --band-muted: #b6c8de; --band-line: rgba(255, 255, 255, .22);
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 10px rgba(0, 0, 0, .25);
     color-scheme: dark;
@@ -81,7 +81,7 @@ code { font-family: var(--mono); }
 .hero-note { margin-top: 16px; max-width: 34em; color: var(--band-ink); font-size: 15px; line-height: 22px; }
 .hero-platforms { margin-top: 28px; color: var(--band-muted); font-size: 14px; line-height: 22px; }
 
-/* The window and the phone hang over the band's lower edge onto the page; #download leaves room for them. */
+/* The window and the phone hang over the band's lower edge onto the page; the section after the hero leaves room for them. */
 .hero-visual { position: relative; z-index: 1; margin-bottom: -112px; padding: 0 0 28px 48px; }
 .window { position: relative; border-radius: 10px; overflow: hidden; background: var(--surface); box-shadow: 0 30px 70px rgba(2, 12, 26, .4); }
 .window-bar { display: flex; align-items: center; gap: 8px; height: 34px; padding-left: 12px; background: #fff; color: #16283b; font-size: 12px; border-bottom: 1px solid #e3e9f0; }
@@ -101,7 +101,7 @@ code { font-family: var(--mono); }
 /* Sections */
 .section { padding: 72px 0; }
 .section-alt { background: var(--bg-alt); }
-#download { padding-top: 176px; }
+.hero + .section { padding-top: 176px; }
 h2 { font-size: 30px; line-height: 38px; font-weight: 600; letter-spacing: -0.005em; }
 .section-lede { margin-top: 10px; max-width: 46em; color: var(--muted); font-size: 17px; line-height: 27px; }
 
@@ -179,6 +179,15 @@ h2 { font-size: 30px; line-height: 38px; font-weight: 600; letter-spacing: -0.00
 .copy:hover { background: var(--selected); }
 .copy .icon { width: 18px; height: 18px; }
 
+/* File name and checksums fold under a small summary: most people only need the button. */
+.check { border-bottom: 0; }
+.check[hidden] { display: none; }
+.check > summary { min-height: 40px; padding: 8px 32px 8px 0; color: var(--muted); font-size: 14px; line-height: 20px; }
+.check > summary:hover { color: var(--ink); }
+.check[open] > summary { margin-bottom: 4px; }
+.check .sum { padding-top: 0; border-top: 0; }
+.check > * + * { margin-top: 12px; }
+
 .details { margin-top: 20px; border-top: 1px solid var(--line); }
 details { border-bottom: 1px solid var(--line); }
 summary {
@@ -199,8 +208,8 @@ details > p, details > .command { margin-bottom: 14px; color: var(--muted); }
 .android { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: start; }
 .android-main { display: flex; flex-direction: column; gap: 16px; max-width: 640px; }
 .android-main > .file-get { margin-top: 0; }
-.android-main .sum { margin-top: 4px; }
-.android-main .hint { margin-top: -4px; }
+/* Version, size and Android version run long in Kazakh: this line may wrap. */
+#apk-meta { white-space: normal; }
 .steps { display: grid; gap: 10px; padding: 0; list-style: none; counter-reset: step; }
 .steps li { position: relative; padding-left: 40px; counter-increment: step; }
 .steps li::before {
@@ -241,20 +250,11 @@ details > p, details > .command { margin-bottom: 14px; color: var(--muted); }
 .shot:hover img { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(22, 40, 59, .14); }
 .shot:hover .caption { color: var(--ink); }
 
-/* What each version has */
-.compare { width: 100%; margin-top: 24px; border-collapse: separate; border-spacing: 0; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); overflow: hidden; font-size: 15px; line-height: 22px; }
-.compare th, .compare td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
-.compare tbody tr:last-child > * { border-bottom: 0; }
-.compare thead th { background: var(--track); color: var(--muted); font-size: 14px; font-weight: 600; }
-.compare thead th + th, .compare td { width: 21%; }
-.compare tbody th { font-weight: 500; }
-.compare td.y, .compare td.n { white-space: nowrap; }
-.compare td.y::before, .compare td.n::before {
-  content: ''; display: inline-block; width: 18px; height: 18px; margin: 0 8px -4px 0; background: currentColor;
-  -webkit-mask: var(--mark) center / contain no-repeat; mask: var(--mark) center / contain no-repeat;
-}
-.compare td.y { color: var(--good); --mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12.5 4.5 4.5L19 7.5'/%3E%3C/svg%3E"); }
-.compare td.n { color: var(--muted); --mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 12h12'/%3E%3C/svg%3E"); }
+/* Why: three plain points, lighter than the safety cards below */
+.why { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 28px; }
+.why-item { padding-top: 16px; border-top: 3px solid var(--accent); }
+.why-item h3 { font-size: 19px; line-height: 28px; font-weight: 600; margin-bottom: 8px; }
+.why-item p { color: var(--muted); }
 
 /* Data and security */
 .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
@@ -317,17 +317,7 @@ details > p, details > .command { margin-bottom: 14px; color: var(--muted); }
   .shots-wide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .shots-tall { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .shots-extension { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .compare thead { display: none; }
-  .compare, .compare tbody, .compare tr { display: block; }
-  .compare tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--line); }
-  .compare tbody tr:last-child { border-bottom: 0; }
-  .compare tbody th { grid-column: 1 / -1; padding-bottom: 4px; border: 0; }
-  .compare td { width: auto; padding-top: 4px; border: 0; white-space: normal !important; }
-  .compare td::after { content: none; }
-  .compare td[data-col]::before {
-    content: attr(data-col); display: block; width: auto; height: auto; margin: 0; background: none;
-    -webkit-mask: none; mask: none; color: var(--muted); font-size: 13px; line-height: 18px;
-  }
+  .why { grid-template-columns: minmax(0, 1fr); gap: 24px; }
 }
 @media (max-width: 640px) {
   .wrap { padding: 0 16px; }
@@ -343,7 +333,7 @@ details > p, details > .command { margin-bottom: 14px; color: var(--muted); }
   .window { display: none; }
   .phone { position: relative; left: auto; bottom: auto; width: 220px; margin: 0 auto; }
   .section { padding: 48px 0; }
-  #download { padding-top: 248px; }
+  .hero + .section { padding-top: 248px; }
   h2 { font-size: 26px; line-height: 32px; }
   .section-lede { font-size: 16px; line-height: 25px; }
   .tabs { display: grid; grid-auto-columns: minmax(0, 1fr); width: 100%; }
@@ -358,10 +348,13 @@ details > p, details > .command { margin-bottom: 14px; color: var(--muted); }
   .browser .status, .browser .button { grid-column: 1 / -1; }
   .shots-wide { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   .shots-tall { gap: 16px; }
-  .compare th, .compare td { padding-left: 12px; padding-right: 12px; }
   .viewer-bar { flex-wrap: wrap; }
   .viewer-caption { order: -1; flex-basis: 100%; }
   .viewer-count { margin-right: auto; }
+}
+/* «Windows 7, 8 және 8.1» does not fit beside its neighbour on a phone: the two systems stack instead of wrapping. */
+@media (max-width: 480px) {
+  .seg-system .seg-track { grid-auto-flow: row; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }

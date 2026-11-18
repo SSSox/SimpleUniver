@@ -8,7 +8,7 @@ The site https://sssox.github.io/SimpleUniver/ helps people download Simple Univ
 - Android, an APK file with a QR code for the phone;
 - the extension for Chrome, Edge and Firefox when there is no app for the system (macOS, Linux, ChromeOS, Windows on ARM).
 
-Every file shows its size and SHA-256. The page also has screenshots, a comparison of the versions, answers to common questions and the [extension privacy policy](https://sssox.github.io/SimpleUniver/privacy/) the stores ask for.
+Every file shows its size and SHA-256. The page also has screenshots, answers to common questions and the [extension privacy policy](https://sssox.github.io/SimpleUniver/privacy/) the stores ask for.
 
 The apps and their code live in other repositories:
 
@@ -34,7 +34,7 @@ The site gets release data at build time, not in the visitor's browser. On the u
 
 ## Running it locally
 
-You need Node.js 20 or newer.
+You need Node.js 22 or newer.
 
 ```bash
 node --test "tests/*.test.mjs"

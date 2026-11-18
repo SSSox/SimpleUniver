@@ -77,10 +77,6 @@
         $$('[data-t-alt]').forEach(function (node) { node.alt = t(node.getAttribute('data-t-alt')); });
         $$('[data-t-content]').forEach(function (node) { node.setAttribute('content', t(node.getAttribute('data-t-content'))); });
         $$('.lang button').forEach(function (button) { button.setAttribute('aria-pressed', String(button.getAttribute('data-lang') === LANGS[lang])); });
-        var heads = $$('.compare thead th').map(function (cell) { return cell.textContent; });
-        $$('.compare tbody tr').forEach(function (row) {
-            $$('td', row).forEach(function (cell, index) { cell.setAttribute('data-col', heads[index + 1] || ''); });
-        });
         render();
     }
 
@@ -94,6 +90,8 @@
         var name = $('[data-part=name]', card);
         name.textContent = url ? file.name : '';
         name.hidden = !url;
+        /* The name and checksum fold away together; a card without a file has nothing to check. */
+        $('[data-part=check]', card).hidden = !url;
         var sum = $('[data-part=sum]', card), sha = url && /^[0-9a-f]{64}$/.test(file.sha256 || '') ? file.sha256 : '';
         sum.hidden = !sha;
         $('[data-part=sha]', card).textContent = sha;
