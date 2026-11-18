@@ -1,0 +1,14 @@
+{
+  "name": "simpleuniver-site",
+  "private": true,
+  "description": "Download page for Simple Univer: Windows, Android and the browser extension",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\"",
+    "releases": "node scripts/releases.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}

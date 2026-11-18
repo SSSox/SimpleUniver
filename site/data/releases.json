@@ -1,0 +1,84 @@
+{
+  "generated": "2026-11-18T07:17:31.749Z",
+  "desktop": {
+    "version": "0.15.0",
+    "date": "2026-11-16",
+    "page": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/tag/v0.15.0",
+    "files": {
+      "modern-x64": {
+        "setup": {
+          "name": "Univer-Desktop-0.15.0-modern-x64-setup.exe",
+          "url": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/download/v0.15.0/Univer-Desktop-0.15.0-modern-x64-setup.exe",
+          "size": 119986216,
+          "sha256": "de3f7e9cbb5446dfaf13cab19632a0f7a347a2d2789b23c408617b3843245f05"
+        },
+        "zip": {
+          "name": "Univer-Desktop-0.15.0-modern-x64.zip",
+          "url": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/download/v0.15.0/Univer-Desktop-0.15.0-modern-x64.zip",
+          "size": 165722359,
+          "sha256": "4486e60c18cad03ac8e909ec863a982106d74913fa7e4951f55ad7aede9f8dfe"
+        }
+      },
+      "modern-x86": {
+        "setup": {
+          "name": "Univer-Desktop-0.15.0-modern-x86-setup.exe",
+          "url": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/download/v0.15.0/Univer-Desktop-0.15.0-modern-x86-setup.exe",
+          "size": 112182715,
+          "sha256": "c5715163d7d44c67fa07cedd6e46f5055e842a55a544e0c83146e63f2f42c2e3"
+        },
+        "zip": {
+          "name": "Univer-Desktop-0.15.0-modern-x86.zip",
+          "url": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/download/v0.15.0/Univer-Desktop-0.15.0-modern-x86.zip",
+          "size": 152051815,
+          "sha256": "0a8ebc09bc0c605c266e12e74078a06c1868043a2fca8ae69ef5b4952abea232"
+        }
+      },
+      "legacy-x64": {
+        "setup": {
+          "name": "Univer-Desktop-0.15.0-legacy-x64-setup.exe",
+          "url": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/download/v0.15.0/Univer-Desktop-0.15.0-legacy-x64-setup.exe",
+          "size": 83653704,
+          "sha256": "dc687e4d63d62797270425ee4c505b908642f71ad2f4f20a080f8e6fbd92c603"
+        },
+        "zip": {
+          "name": "Univer-Desktop-0.15.0-legacy-x64.zip",
+          "url": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/download/v0.15.0/Univer-Desktop-0.15.0-legacy-x64.zip",
+          "size": 117005753,
+          "sha256": "4fe77f78b3a80eec16bde5cec1ff3393bdc634d307eaeadba4b654cfc86918c3"
+        }
+      },
+      "legacy-x86": {
+        "setup": {
+          "name": "Univer-Desktop-0.15.0-legacy-x86-setup.exe",
+          "url": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/download/v0.15.0/Univer-Desktop-0.15.0-legacy-x86-setup.exe",
+          "size": 79112882,
+          "sha256": "b33d32cfc13a78e5cfa871314a510608c34e767ef0755d0362298d6249f4d7da"
+        },
+        "zip": {
+          "name": "Univer-Desktop-0.15.0-legacy-x86.zip",
+          "url": "https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/download/v0.15.0/Univer-Desktop-0.15.0-legacy-x86.zip",
+          "size": 109297629,
+          "sha256": "57fe9a186815a6feaeeb867a5488d7b03c98a7b3c51e74b93d026b11f1409a06"
+        }
+      }
+    },
+    "extension": null
+  },
+  "android": {
+    "version": "2.4.0",
+    "date": "2026-11-17",
+    "page": "https://github.com/SSSox/Simple-UniverKazNU-Android/releases/tag/v2.4.0",
+    "apk": {
+      "name": "Simple-UniverKazNU.apk",
+      "url": "https://github.com/SSSox/Simple-UniverKazNU-Android/releases/download/v2.4.0/Simple-UniverKazNU.apk",
+      "size": 2790467,
+      "sha256": "7d39738499fdf6aa78583527cb63ae5bc35e6c28d820f23647de18a5e461e946"
+    },
+    "latest": "https://github.com/SSSox/Simple-UniverKazNU-Android/releases/latest/download/Simple-UniverKazNU.apk"
+  },
+  "stores": {
+    "chrome": null,
+    "edge": null,
+    "firefox": null
+  }
+}

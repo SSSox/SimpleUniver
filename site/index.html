@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-t="pageTitle">Simple Univer: скачать для Windows, Android и браузера</title>
+<meta name="description" data-t-content="pageDescription" content="Неофициальное приложение для univer.kaznu.kz: расписание с темами из силлабуса, баллы с порогами, файлы УМКД одной кнопкой. Windows, Android и расширение для Chrome, Edge и Firefox.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#164a86" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f2742" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Simple Univer">
+<meta property="og:description" content="Неофициальное приложение для univer.kaznu.kz: Windows, Android и расширение для браузера.">
+<meta property="og:image" content="https://sssox.github.io/SimpleUniver/assets/shots/desktop-schedule.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2.8 19.5h18.4L12 4Z"/><path d="M12 10v4.5M12 17.2v.1"/></symbol>
+  <symbol id="i-chrome" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2"/><path d="M12 8.8h8M9.2 13.6 5.2 6.7M14.8 13.6l-4 6.9"/></symbol>
+  <symbol id="i-edge" viewBox="0 0 24 24"><path d="M20.5 13.5c0 4-3.6 7-8 7-4.7 0-8.5-3.8-8.5-8.5S7.8 3.5 12.5 3.5c4.4 0 8 3 8 7.2 0 2.2-1.8 3.6-4 3.6H9.6"/><path d="M9.6 14.3c.4 2.2 2.4 3.7 4.9 3.7"/></symbol>
+  <symbol id="i-firefox" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8 6.5c-1 1.6-.6 3.6.8 4.6 1.6 1.1 3.9.6 4.9-1.1.6 1.5.2 3.2-1 4.2"/></symbol>
+</svg>
+
+<a class="skip" href="#download" data-t="skip">Перейти к загрузке</a>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="./"><img src="assets/img/logo-128.png" width="32" height="32" alt=""><span>Simple Univer</span></a>
+    <nav class="nav" data-t-aria="navLabel" aria-label="Разделы страницы">
+      <a href="#download" data-t="navDownload">Скачать</a>
+      <a href="#screens" data-t="navScreens">Снимки экрана</a>
+      <a href="#compare" data-t="navCompare">Возможности</a>
+      <a href="#faq" data-t="navFaq">Вопросы</a>
+    </nav>
+    <div class="lang" role="group" data-t-aria="langLabel" aria-label="Язык">
+      <button type="button" data-lang="ru" lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="kz" lang="kk" aria-pressed="false">KZ</button>
+      <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker" data-t="heroKicker">Неофициальное приложение для univer.kaznu.kz</p>
+      <h1 data-t="heroTitle">Кабинет студента КазНУ в удобном виде</h1>
+      <p class="lede" data-t="heroLede">Расписание по дням с темами из силлабуса, баллы с порогами 50, 70 и 90, все файлы раздела УМКД одной кнопкой. Вы входите на univer.kaznu.kz как обычно, своего сервера у Simple Univer нет.</p>
+      <div class="cta">
+        <a class="hero-button" id="hero-button" href="#download">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+          <span class="hero-button-text">
+            <span class="hero-button-verb" id="hero-verb" data-t="heroDownload">Скачать</span>
+            <span class="hero-button-meta" id="hero-meta" data-t="heroMetaDefault">Windows, Android или браузер</span>
+          </span>
+        </a>
+        <a class="hero-other" href="#download" id="hero-other" data-t="heroOther">Все версии</a>
+      </div>
+      <p class="hero-note" id="hero-note" hidden></p>
+      <p class="hero-platforms" data-t="heroPlatforms">Windows 7, 8, 8.1, 10 и 11 · Android 7.0 и новее · Chrome, Edge и Firefox</p>
+    </div>
+    <div class="hero-visual">
+      <figure class="window">
+        <div class="window-bar" aria-hidden="true"><img src="assets/img/favicon-32.png" width="16" height="16" alt=""><span>Univer</span><i class="w-min"></i><i class="w-max"></i><i class="w-close"></i></div>
+        <img class="window-shot" src="assets/shots/desktop-schedule.webp" width="1424" height="805" fetchpriority="high" data-t-alt="capDesktopSchedule" alt="Расписание: время до первой пары, СРО недели и темы из силлабуса под парами">
+      </figure>
+      <figure class="phone">
+        <img src="assets/shots/android-home.webp" width="540" height="1205" data-t-alt="capAndroidHome" alt="Главная: плитки разделов, поиск и новости">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="download" aria-labelledby="download-title">
+  <div class="wrap">
+    <h2 id="download-title" data-t="dlTitle">Скачать</h2>
+    <p class="section-lede" data-t="dlLede">Все версии одинаково переделывают страницы сайта. Приложения для Windows и Android запоминают вход и обновляются сами, расширение работает в вашем браузере.</p>
+
+    <div class="tabs" role="tablist" data-t-aria="tabsLabel" aria-label="Платформа" hidden>
+      <button type="button" role="tab" id="tab-windows" aria-controls="panel-windows" aria-selected="true" data-t="tabWindows">Windows</button>
+      <button type="button" role="tab" id="tab-android" aria-controls="panel-android" aria-selected="false" tabindex="-1" data-t="tabAndroid">Android</button>
+      <button type="button" role="tab" id="tab-browser" aria-controls="panel-browser" aria-selected="false" tabindex="-1" data-t="tabBrowser">Браузер</button>
+    </div>
+
+    <div class="panel" id="panel-windows" role="tabpanel" aria-labelledby="tab-windows" tabindex="0">
+      <h3 class="panel-title" data-t="tabWindows">Windows</h3>
+      <div class="choices">
+        <fieldset class="seg">
+          <legend data-t="winSystem">Система</legend>
+          <div class="seg-track">
+            <label><input type="radio" name="system" value="modern" checked><span data-t="winModern">Windows 10 и 11</span></label>
+            <label><input type="radio" name="system" value="legacy"><span data-t="winLegacy">Windows 7, 8 и 8.1</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="seg">
+          <legend data-t="winBits">Разрядность</legend>
+          <div class="seg-track">
+            <label><input type="radio" name="bits" value="x64" checked><span data-t="bits64">64-разрядная</span></label>
+            <label><input type="radio" name="bits" value="x86"><span data-t="bits32">32-разрядная</span></label>
+          </div>
+        </fieldset>
+      </div>
+      <p class="hint" data-t="winBitsHint">Разрядность видна в «Параметры › Система › О системе», строка «Тип системы» (в Windows 7: «Панель управления › Система»). Если не уверены, берите 64-разрядную.</p>
+      <p class="warning" id="legacy-warning" hidden><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><span data-t="legacyWarn">Legacy нужен только для Windows 7 SP1, 8 и 8.1. Он работает на Chromium 109, для которого больше не выходят исправления безопасности. На Windows 10 и 11 ставьте Modern.</span></p>
+      <p class="hint" id="x86-note" hidden data-t="x86Note">32-разрядной бывает только Windows 10: у Windows 11 такой версии нет.</p>
+
+      <div class="files">
+        <article class="file" id="file-setup">
+          <div class="file-head">
+            <h4 data-t="setupTitle">Установщик</h4>
+            <span class="tag" data-t="recommended">Рекомендуем</span>
+          </div>
+          <p data-t="setupText">Ставится без прав администратора, создаёт ярлык в меню «Пуск» и потом обновляется сам. Если на компьютере нет .NET Framework или Visual C++, предложит скачать их с сайта Microsoft.</p>
+          <div class="file-get">
+            <a class="button button-primary" data-part="link" href="https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/latest"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span data-t="dlSetup">Скачать установщик</span></a>
+            <span class="file-size" data-part="size"></span>
+          </div>
+          <code class="filename" data-part="name"></code>
+          <div class="sum" data-part="sum" hidden>
+            <span class="sum-label" data-t="sumLabel">SHA-256</span>
+            <code class="sum-value" data-part="sha"></code>
+            <button type="button" class="copy" data-copy=""><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-t="copy">Копировать</span></button>
+          </div>
+        </article>
+
+        <article class="file" id="file-zip">
+          <div class="file-head"><h4 data-t="zipTitle">Portable ZIP</h4></div>
+          <p data-t="zipText">Ничего не устанавливает. Распакуйте архив целиком в отдельную папку и запустите Univer.Desktop.exe. Новые версии придётся скачивать вручную.</p>
+          <div class="needs">
+            <span data-t="zipNeeds">Нужны компоненты Microsoft:</span>
+            <ul>
+              <li id="need-net"><span data-t="netModern">.NET Framework 4.6.2 или новее (в Windows 10 и 11 обычно уже есть)</span></li>
+              <li id="need-vc"><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">Visual C++ 2015-2022, x64</a></li>
+            </ul>
+          </div>
+          <div class="file-get">
+            <a class="button" data-part="link" href="https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/latest"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span data-t="dlZip">Скачать ZIP</span></a>
+            <span class="file-size" data-part="size"></span>
+          </div>
+          <code class="filename" data-part="name"></code>
+          <div class="sum" data-part="sum" hidden>
+            <span class="sum-label" data-t="sumLabel">SHA-256</span>
+            <code class="sum-value" data-part="sha"></code>
+            <button type="button" class="copy" data-copy=""><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-t="copy">Копировать</span></button>
+          </div>
+        </article>
+      </div>
+
+      <div class="details">
+        <details>
+          <summary data-t="smartTitle">Windows пишет «Windows защитила ваш компьютер»</summary>
+          <p data-t="smartText">Файлы пока не подписаны сертификатом издателя, поэтому SmartScreen их не знает. Сверьте SHA-256 скачанного файла с суммой на этой странице, затем нажмите «Подробнее» и «Выполнить в любом случае». Если сумма не совпала, файл не запускайте.</p>
+        </details>
+        <details>
+          <summary data-t="verifyTitle">Как сверить SHA-256</summary>
+          <p data-t="verifyText">Откройте PowerShell в папке с файлом и выполните команду. Значение Hash должно совпасть с суммой на этой странице.</p>
+          <div class="command">
+            <code id="hash-command">Get-FileHash .\Univer-Desktop-0.15.0-modern-x64-setup.exe</code>
+            <button type="button" class="copy" data-copy-from="hash-command"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-t="copy">Копировать</span></button>
+          </div>
+          <p data-t="verifyNote">Сумма показывает, что файл скачался целиком и не изменился по дороге. Подписью издателя она не является.</p>
+        </details>
+      </div>
+      <p class="release" id="release-windows"><a href="https://github.com/SSSox/Simple-UniverKazNU-Desktop/releases/latest" data-t="releaseAll">Все файлы выпуска на GitHub</a></p>
+    </div>
+
+    <div class="panel" id="panel-android" role="tabpanel" aria-labelledby="tab-android" tabindex="0">
+      <h3 class="panel-title" data-t="tabAndroid">Android</h3>
+      <div class="android">
+        <div class="android-main">
+          <div class="file-get">
+            <a class="button button-primary button-large" id="apk-link" href="https://github.com/SSSox/Simple-UniverKazNU-Android/releases/latest/download/Simple-UniverKazNU.apk"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span data-t="apkButton">Скачать APK</span></a>
+            <span class="file-size" id="apk-meta" data-t="apkMetaDefault">Android 7.0 и новее</span>
+          </div>
+          <h4 data-t="stepsTitle">Как установить</h4>
+          <ol class="steps">
+            <li data-t="step1">Скачайте файл на телефон.</li>
+            <li data-t="step2">Откройте его из уведомления или из «Загрузок». Если Android спросит, разрешите установку приложений из этого источника.</li>
+            <li data-t="step3">Запустите «Univer · КазНУ» и выберите: сохранить логин и пароль для входа или входить вручную на странице сайта.</li>
+          </ol>
+          <p data-t="apkUpdates">Новые версии приложение находит само и ставит в пару нажатий.</p>
+          <div class="sum" id="apk-sum" hidden>
+            <span class="sum-label" data-t="apkSumLabel">SHA-256 файла</span>
+            <code class="sum-value" id="apk-sha"></code>
+            <button type="button" class="copy" data-copy-from="apk-sha"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-t="copy">Копировать</span></button>
+          </div>
+          <div class="sum">
+            <span class="sum-label" data-t="certLabel">Сертификат SOX Team, SHA-256</span>
+            <code class="sum-value" id="cert-sha">0aa54a2d4714db17bc71b9a0a4d4bc7818cb57d91f10685200416bd2094732b9</code>
+            <button type="button" class="copy" data-copy-from="cert-sha"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-t="copy">Копировать</span></button>
+          </div>
+          <p class="hint" data-t="certText">APK подписан ключом SOX Team. Android не поставит поверх него версию с другой подписью.</p>
+          <p class="release" id="release-android"><a href="https://github.com/SSSox/Simple-UniverKazNU-Android/releases/latest" data-t="releaseAll">Все файлы выпуска на GitHub</a></p>
+        </div>
+        <figure class="qr">
+          <img src="assets/img/qr-apk.svg" width="196" height="196" data-t-alt="qrAlt" alt="QR-код со ссылкой на APK">
+          <figcaption data-t="qrCaption">Наведите камеру телефона, чтобы скачать APK</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-browser" role="tabpanel" aria-labelledby="tab-browser" tabindex="0">
+      <h3 class="panel-title" data-t="tabBrowser">Браузер</h3>
+      <p class="panel-lede" data-t="extIntro">Расширение оформляет univer.kaznu.kz прямо в браузере компьютера: тот же удобный вид, расписание с темами силлабуса, сводка успеваемости для печати и «Скачать все» в УМКД. Логин и пароль хранит менеджер паролей браузера, а пароль от Univer расширение не читает и не хранит.</p>
+      <div class="browsers">
+        <article class="browser" data-store="chrome">
+          <svg class="browser-icon" aria-hidden="true"><use href="#i-chrome"/></svg>
+          <div class="browser-text"><h4>Google Chrome</h4><span class="browser-store" data-t="storeChrome">Chrome Web Store</span></div>
+          <span class="status" data-part="pending" data-t="extPending">Готовится к публикации</span>
+          <a class="button button-primary" data-part="install" hidden><span data-t="extInstall">Установить</span></a>
+        </article>
+        <article class="browser" data-store="edge">
+          <svg class="browser-icon" aria-hidden="true"><use href="#i-edge"/></svg>
+          <div class="browser-text"><h4>Microsoft Edge</h4><span class="browser-store" data-t="storeEdge">Надстройки Microsoft Edge</span></div>
+          <span class="status" data-part="pending" data-t="extPending">Готовится к публикации</span>
+          <a class="button button-primary" data-part="install" hidden><span data-t="extInstall">Установить</span></a>
+        </article>
+        <article class="browser" data-store="firefox">
+          <svg class="browser-icon" aria-hidden="true"><use href="#i-firefox"/></svg>
+          <div class="browser-text"><h4>Mozilla Firefox</h4><span class="browser-store" data-t="storeFirefox">Firefox Add-ons</span></div>
+          <span class="status" data-part="pending" data-t="extPending">Готовится к публикации</span>
+          <a class="button button-primary" data-part="install" hidden><span data-t="extInstall">Установить</span></a>
+        </article>
+      </div>
+      <div class="manual" id="ext-manual" hidden>
+        <h4 data-t="extManualTitle">Установить из архива, пока расширения нет в магазине</h4>
+        <ol class="steps">
+          <li data-t="extManual1">Скачайте ZIP и распакуйте его в папку, которую не будете удалять.</li>
+          <li data-t="extManual2">Откройте chrome://extensions (в Edge: edge://extensions) и включите режим разработчика.</li>
+          <li data-t="extManual3">Нажмите «Загрузить распакованное расширение» и выберите эту папку.</li>
+        </ol>
+        <div class="file-get">
+          <a class="button" id="ext-zip"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span data-t="extDownloadZip">Скачать ZIP для Chrome и Edge</span></a>
+          <span class="file-size" id="ext-zip-size"></span>
+        </div>
+        <p class="hint" data-t="extManualNote">Так установленное расширение само не обновляется. Firefox ставит только подписанные расширения, поэтому для него ждите версию в Firefox Add-ons.</p>
+      </div>
+      <p class="note" data-t="extAuto">По умолчанию расширение само подтверждает уведомление о прочтении и соглашение сайта: ставит отметку и один раз отправляет форму. Это выключается в настройках расширения, пункт «Подтверждать уведомление и соглашение».</p>
+      <p class="hint" data-t="extLimits">В расширении нет сохранённого входа, PIN-кода, своего списка загрузок и просмотра файлов: этим занимается браузер.</p>
+      <p class="release"><a href="privacy/" data-t="extPrivacy">Политика конфиденциальности расширения</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="screens" aria-labelledby="screens-title">
+  <div class="wrap">
+    <h2 id="screens-title" data-t="screensTitle">Снимки экрана</h2>
+    <p class="section-lede" data-t="screensLede">Сняты на демонстрационных данных, личных данных в кадре нет.</p>
+    <div class="tabs tabs-small" role="tablist" data-t-aria="shotsLabel" aria-label="Снимки экрана по платформам" hidden>
+      <button type="button" role="tab" id="stab-windows" aria-controls="shots-windows" aria-selected="true" data-t="tabWindows">Windows</button>
+      <button type="button" role="tab" id="stab-android" aria-controls="shots-android" aria-selected="false" tabindex="-1" data-t="tabAndroid">Android</button>
+      <button type="button" role="tab" id="stab-extension" aria-controls="shots-extension" aria-selected="false" tabindex="-1" data-t="shotsExtension">Расширение</button>
+    </div>
+    <div class="shots shots-wide" id="shots-windows" role="tabpanel" aria-labelledby="stab-windows">
+      <a class="shot" href="assets/shots/desktop-schedule.webp"><img src="assets/shots/desktop-schedule.webp" width="1424" height="805" loading="lazy" data-t-alt="capDesktopSchedule" alt="Расписание: время до первой пары, СРО недели и темы из силлабуса под парами"><span class="caption" data-t="capDesktopSchedule">Расписание: время до первой пары, СРО недели и темы из силлабуса под парами</span></a>
+      <a class="shot" href="assets/shots/desktop-home.webp"><img src="assets/shots/desktop-home.webp" width="1566" height="642" loading="lazy" data-t-alt="capDesktopHome" alt="Главная кабинета с плитками разделов и новостями"><span class="caption" data-t="capDesktopHome">Главная кабинета с плитками разделов и новостями</span></a>
+      <a class="shot" href="assets/shots/desktop-sections.webp"><img src="assets/shots/desktop-sections.webp" width="1566" height="978" loading="lazy" data-t-alt="capDesktopSections" alt="Панель «Все разделы»: поиск, группы и закрепление на главной"><span class="caption" data-t="capDesktopSections">Панель «Все разделы»: поиск, группы и закрепление на главной</span></a>
+      <a class="shot shot-contain" href="assets/shots/desktop-umkd.webp"><img src="assets/shots/desktop-umkd.webp" width="1092" height="271" loading="lazy" data-t-alt="capDesktopUmkd" alt="Материалы УМКД: кнопка «Скачать все» у раздела"><span class="caption" data-t="capDesktopUmkd">Материалы УМКД: кнопка «Скачать все» у раздела</span></a>
+      <a class="shot shot-contain" href="assets/shots/desktop-pin.webp"><img src="assets/shots/desktop-pin.webp" width="542" height="562" loading="lazy" data-t-alt="capDesktopPin" alt="PIN-код при запуске приложения"><span class="caption" data-t="capDesktopPin">PIN-код при запуске приложения</span></a>
+    </div>
+    <div class="shots shots-tall" id="shots-android" role="tabpanel" aria-labelledby="stab-android">
+      <a class="shot" href="assets/shots/android-home.webp"><img src="assets/shots/android-home.webp" width="540" height="1205" loading="lazy" data-t-alt="capAndroidHome" alt="Главная: плитки разделов, поиск и новости"><span class="caption" data-t="capAndroidHome">Главная: плитки разделов, поиск и новости</span></a>
+      <a class="shot" href="assets/shots/android-schedule.webp"><img src="assets/shots/android-schedule.webp" width="540" height="1205" loading="lazy" data-t-alt="capAndroidSchedule" alt="Расписание по дням с типом занятия и аудиторией"><span class="caption" data-t="capAndroidSchedule">Расписание по дням с типом занятия и аудиторией</span></a>
+      <a class="shot" href="assets/shots/android-sections.webp"><img src="assets/shots/android-sections.webp" width="540" height="1205" loading="lazy" data-t-alt="capAndroidSections" alt="«Все разделы»: поиск и закрепление на главной"><span class="caption" data-t="capAndroidSections">«Все разделы»: поиск и закрепление на главной</span></a>
+      <a class="shot" href="assets/shots/android-downloads.webp"><img src="assets/shots/android-downloads.webp" width="540" height="1205" loading="lazy" data-t-alt="capAndroidDownloads" alt="«Загрузки»: поиск, фильтр по предметам и типам файлов"><span class="caption" data-t="capAndroidDownloads">«Загрузки»: поиск, фильтр по предметам и типам файлов</span></a>
+    </div>
+    <div class="shots shots-tall shots-extension" id="shots-extension" role="tabpanel" aria-labelledby="stab-extension">
+      <a class="shot" href="assets/shots/extension-popup-light.webp"><img src="assets/shots/extension-popup-light.webp" width="720" height="1166" loading="lazy" data-t-alt="capExtLight" alt="Настройки расширения: вид страниц, тема и подтверждение форм"><span class="caption" data-t="capExtLight">Настройки расширения: вид страниц, тема и подтверждение форм</span></a>
+      <a class="shot" href="assets/shots/extension-popup-dark.webp"><img src="assets/shots/extension-popup-dark.webp" width="720" height="1166" loading="lazy" data-t-alt="capExtDark" alt="Те же настройки в тёмной теме"><span class="caption" data-t="capExtDark">Те же настройки в тёмной теме</span></a>
+      <p class="shots-note" data-t="extShotNote">Страницы сайта расширение оформляет так же, как приложение для Windows на снимках выше.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="compare" aria-labelledby="compare-title">
+  <div class="wrap">
+    <h2 id="compare-title" data-t="compareTitle">Что есть в каждой версии</h2>
+    <table class="compare">
+      <thead>
+        <tr><th scope="col" data-t="colFeature">Возможность</th><th scope="col">Windows</th><th scope="col">Android</th><th scope="col" data-t="colBrowser">Браузер</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row" data-t="fView">Удобный вид сайта и «Оригинальный вид»</th><td class="y" data-col="Windows" data-t="yes">Есть</td><td class="y" data-col="Android" data-t="yes">Есть</td><td class="y" data-col="browser" data-t="yes">Есть</td></tr>
+        <tr><th scope="row" data-t="fSchedule">Расписание с темами из силлабуса</th><td class="y" data-col="Windows" data-t="yes">Есть</td><td class="y" data-col="Android" data-t="yes">Есть</td><td class="y" data-col="browser" data-t="yes">Есть</td></tr>
+        <tr><th scope="row" data-t="fReport">Сводка успеваемости</th><td class="y" data-col="Windows" data-t="pdfPng">PDF и PNG</td><td class="y" data-col="Android" data-t="pdfPng">PDF и PNG</td><td class="y" data-col="browser" data-t="printPdf">Печать и PDF</td></tr>
+        <tr><th scope="row" data-t="fUmkd">«Скачать все» в разделе УМКД</th><td class="y" data-col="Windows" data-t="yes">Есть</td><td class="y" data-col="Android" data-t="yes">Есть</td><td class="y" data-col="browser" data-t="yes">Есть</td></tr>
+        <tr><th scope="row" data-t="fRelogin">Снова входит сам, когда сессия закончилась</th><td class="y" data-col="Windows" data-t="yes">Есть</td><td class="y" data-col="Android" data-t="yes">Есть</td><td class="n" data-col="browser" data-t="no">Нет</td></tr>
+        <tr><th scope="row" data-t="fPassword">Где хранится пароль</th><td data-col="Windows" data-t="passWindows">Зашифрован в Windows</td><td data-col="Android" data-t="passAndroid">Зашифрован в Android</td><td data-col="browser" data-t="passBrowser">Менеджер паролей браузера</td></tr>
+        <tr><th scope="row" data-t="fPin">PIN-код</th><td class="y" data-col="Windows" data-t="yes">Есть</td><td class="y" data-col="Android" data-t="pinAndroid">Есть, и отпечаток</td><td class="n" data-col="browser" data-t="no">Нет</td></tr>
+        <tr><th scope="row" data-t="fFiles">Просмотр PDF, Word и Excel внутри</th><td class="y" data-col="Windows" data-t="yes">Есть</td><td class="y" data-col="Android" data-t="yes">Есть</td><td data-col="browser" data-t="pdfBrowser">PDF в браузере</td></tr>
+        <tr><th scope="row" data-t="fNotices">Уведомления сайта в колокольчике</th><td class="y" data-col="Windows" data-t="yes">Есть</td><td class="y" data-col="Android" data-t="yes">Есть</td><td class="n" data-col="browser" data-t="no">Нет</td></tr>
+        <tr><th scope="row" data-t="fUpdates">Обновления</th><td data-col="Windows" data-t="updSelf">Сами</td><td data-col="Android" data-t="updSelf">Сами</td><td data-col="browser" data-t="updStore">Через магазин</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section section-alt" id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap">
+    <h2 id="privacy-title" data-t="privTitle">Данные и безопасность</h2>
+    <div class="facts">
+      <div class="fact"><h3 data-t="priv1Title">Своего сервера нет</h3><p data-t="priv1">Приложения и расширение обращаются к univer.kaznu.kz (Android ещё к СДО Moodle), а за обновлениями к GitHub. Аналитики и рекламы нет.</p></div>
+      <div class="fact"><h3 data-t="priv2Title">Пароль остаётся у вас</h3><p data-t="priv2">В Windows он зашифрован средствами Windows под вашей учётной записью, на Android ключом Android Keystore и не попадает в резервные копии. Расширение пароль не хранит.</p></div>
+      <div class="fact"><h3 data-t="priv3Title">Открытый код</h3><p data-t="priv3">Исходники приложений, расширения и этого сайта открыты на GitHub под лицензией GPL-3.0: можно посмотреть, что именно делает программа.</p></div>
+    </div>
+    <p class="links">
+      <a href="privacy/" data-t="extPrivacy">Политика конфиденциальности расширения</a>
+      <a href="https://github.com/SSSox/Simple-UniverKazNU-Desktop/blob/main/PRIVACY.md" data-t="privWindows">Конфиденциальность: Windows</a>
+      <a href="https://github.com/SSSox/Simple-UniverKazNU-Android/blob/main/PRIVACY.md" data-t="privAndroid">Конфиденциальность: Android</a>
+    </p>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap wrap-narrow">
+    <h2 id="faq-title" data-t="faqTitle">Вопросы</h2>
+    <div class="faq">
+      <details><summary data-t="q1">Это официальное приложение КазНУ?</summary><p data-t="a1">Нет. Simple Univer делают независимо от университета. Приложение открывает тот же univer.kaznu.kz под вашей учётной записью и меняет только то, как страницы выглядят у вас.</p></details>
+      <details><summary data-t="q2">Какую версию для Windows выбрать?</summary><p data-t="a2">Для Windows 10 и 11 нужен Modern, для Windows 7, 8 и 8.1 нужен Legacy. Если сомневаетесь, на Windows 10 и 11 берите Modern 64-разрядную. Windows на процессорах ARM не поддерживается.</p></details>
+      <details><summary data-t="q3">Где хранится мой пароль?</summary><p data-t="a3">Только на вашем устройстве. Приложение для Windows шифрует его средствами Windows под вашей учётной записью, приложение для Android ключом Android Keystore. Пароль можно не сохранять и входить вручную на странице сайта. Расширение пароль не хранит: его запоминает менеджер паролей браузера, если вы разрешите.</p></details>
+      <details><summary data-t="q4">Как обновлять?</summary><p data-t="a4">Установленное приложение для Windows и приложение для Android сами проверяют GitHub и предлагают новую версию. Portable-версия о ней сообщает, но новый архив нужно скачать вручную. Расширение из магазина обновляет браузер.</p></details>
+      <details><summary data-t="q5">Что расширение делает без меня?</summary><p data-t="a5">Оформляет страницы, читает недели расписания и силлабусы, чтобы показать темы занятий, и по умолчанию один раз подтверждает уведомление о прочтении и соглашение сайта. Подтверждение выключается в настройках расширения. Анкеты, тесты и другие формы оно не трогает.</p></details>
+      <details><summary data-t="q6">Есть ли версия для iPhone или Mac?</summary><p data-t="a6">Для iPhone и iPad нет. На Mac, Linux и Chromebook работает расширение для Chrome, Edge или Firefox.</p></details>
+      <details><summary data-t="q7">Что будет, если сайт университета изменится?</summary><p data-t="a7">Часть удобного вида может перестать работать до обновления приложения. «Оригинальный вид» в любой момент показывает сайт без изменений.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <p class="foot-note" data-t="footNote">Simple Univer не связан с Казахским национальным университетом имени аль-Фараби.</p>
+    <nav class="foot-links" data-t-aria="footSource" aria-label="Исходный код">
+      <span data-t="footSource">Исходный код</span>
+      <a href="https://github.com/SSSox/Simple-UniverKazNU-Desktop" data-t="footWindows">Windows</a>
+      <a href="https://github.com/SSSox/Simple-UniverKazNU-Android" data-t="footAndroid">Android</a>
+      <a href="https://github.com/SSSox/SimpleUniver" data-t="footSite">Этот сайт</a>
+      <a href="privacy/" data-t="footPrivacy">Конфиденциальность</a>
+      <a href="https://github.com/SSSox/SimpleUniver/blob/main/LICENSE" data-t="footLicense">Лицензия GPL-3.0</a>
+    </nav>
+  </div>
+</footer>
+
+<dialog class="viewer" id="viewer" aria-labelledby="viewer-caption">
+  <div class="viewer-frame">
+    <img id="viewer-image" alt="">
+    <div class="viewer-bar">
+      <button type="button" class="icon-button" id="viewer-prev" data-t-aria="prev" aria-label="Предыдущий снимок"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+      <p class="viewer-caption" id="viewer-caption"></p>
+      <span class="viewer-count" id="viewer-count"></span>
+      <button type="button" class="icon-button" id="viewer-next" data-t-aria="next" aria-label="Следующий снимок"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+      <button type="button" class="icon-button" id="viewer-close" data-t-aria="close" aria-label="Закрыть"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/detect.js"></script>
+<script src="assets/strings.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
