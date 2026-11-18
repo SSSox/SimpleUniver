@@ -56,24 +56,6 @@ The workflow `.github/workflows/pages.yml` tests the site, collects release data
 
 If the GitHub API does not answer, the build stops with an error and the previous version of the site stays up.
 
-Once, in the repository settings: Settings → Pages → Source: **GitHub Actions**.
-
-GitHub turns off the schedule when a repository has had no commits for 60 days. The site then misses new releases until someone turns the workflow back on in the Actions tab or runs it by hand.
-
-## Store links
-
-Until the extension is published, the site offers a ZIP for manual installation. After publication, put the addresses in `stores.json`:
-
-```json
-{
-  "chrome": "https://chromewebstore.google.com/detail/…",
-  "edge": "https://microsoftedge.microsoft.com/addons/detail/…",
-  "firefox": "https://addons.mozilla.org/…"
-}
-```
-
-The build skips an address that starts differently. An empty string means "not published yet".
-
 ## License
 
 GPL-3.0-or-later, like both apps. The license text is in [LICENSE](LICENSE).
